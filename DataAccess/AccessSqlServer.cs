@@ -63,8 +63,7 @@ namespace chananet.DataAccess
                 connection.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = connection;
-                cmd.CommandText = cmdText;
-                cmd.CommandType = CommandType.Text;
+                
 
                 if (Username != null && Password != null)
                 {
@@ -77,6 +76,8 @@ namespace chananet.DataAccess
                     Pass.Value = Password;
                 }
 
+                cmd.CommandText = cmdText;
+                cmd.CommandType = CommandType.Text;
                 SqlDataReader rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                     LineUsers.Add(new LineUser()
