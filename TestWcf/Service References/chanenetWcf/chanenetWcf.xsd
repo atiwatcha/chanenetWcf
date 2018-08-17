@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1507/chanenetWcf.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/chananet.DataContract" />
+  <xs:element name="getlineProgram">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getlineProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="getlineProgramResult" nillable="true" type="q1:LineProgram" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineRegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="User_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineRegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="LineRegisterUserResult" nillable="true" type="q2:ProcessResoult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sentNotify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sentNotifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="sentNotifyResult" nillable="true" type="q3:ProcessResoult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getlineUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getlineUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="getlineUserResult" nillable="true" type="q4:ProcessResoult" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="List_LineUser" nillable="true" type="q5:ArrayOfLineUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAccesTokenUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAccesTokenUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="getAccesTokenUserResult" nillable="true" type="q6:ProcessResoult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/chananet.DataContract" minOccurs="0" name="testResult" nillable="true" type="q7:ProcessResoult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

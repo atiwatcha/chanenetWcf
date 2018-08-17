@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceInterface" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:1507/chanenetWcf.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:1507/chanenetWcf.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1507/chanenetWcf.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/chananet.DataContract" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceInterface_getlineProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:getlineProgram" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_getlineProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getlineProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_LineRegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:LineRegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_LineRegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LineRegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_sentNotify_InputMessage">
+    <wsdl:part name="parameters" element="tns:sentNotify" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_sentNotify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sentNotifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_getlineUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getlineUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_getlineUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getlineUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_getAccesTokenUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAccesTokenUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_getAccesTokenUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAccesTokenUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_test_InputMessage">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInterface_test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceInterface">
+    <wsdl:operation name="getlineProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/getlineProgram" message="tns:IServiceInterface_getlineProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/getlineProgramResponse" message="tns:IServiceInterface_getlineProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LineRegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/LineRegisterUser" message="tns:IServiceInterface_LineRegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/LineRegisterUserResponse" message="tns:IServiceInterface_LineRegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sentNotify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/sentNotify" message="tns:IServiceInterface_sentNotify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/sentNotifyResponse" message="tns:IServiceInterface_sentNotify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getlineUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/getlineUser" message="tns:IServiceInterface_getlineUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/getlineUserResponse" message="tns:IServiceInterface_getlineUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccesTokenUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/getAccesTokenUser" message="tns:IServiceInterface_getAccesTokenUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/getAccesTokenUserResponse" message="tns:IServiceInterface_getAccesTokenUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceInterface/test" message="tns:IServiceInterface_test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceInterface/testResponse" message="tns:IServiceInterface_test_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceInterface" type="tns:IServiceInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getlineProgram">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/getlineProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LineRegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/LineRegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sentNotify">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/sentNotify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlineUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/getlineUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccesTokenUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/getAccesTokenUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/IServiceInterface/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceInterface">
+    <wsdl:port name="BasicHttpBinding_IServiceInterface" binding="tns:BasicHttpBinding_IServiceInterface">
+      <soap:address location="http://localhost:1507/chanenetWcf.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

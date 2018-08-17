@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLogic", "Bussiness
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContract", "ServiceContract\ServiceContract.csproj", "{615914B0-353B-428D-A897-6DA94A5E704F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWcf", "TestWcf\TestWcf.csproj", "{D2C3B4B7-6D1B-4AAD-A878-1D9080433569}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A710DF8-CE20-4A17-90BD-51B5E61805B0} = {8A710DF8-CE20-4A17-90BD-51B5E61805B0}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +44,10 @@ Global
 		{615914B0-353B-428D-A897-6DA94A5E704F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{615914B0-353B-428D-A897-6DA94A5E704F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{615914B0-353B-428D-A897-6DA94A5E704F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C3B4B7-6D1B-4AAD-A878-1D9080433569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C3B4B7-6D1B-4AAD-A878-1D9080433569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C3B4B7-6D1B-4AAD-A878-1D9080433569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C3B4B7-6D1B-4AAD-A878-1D9080433569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

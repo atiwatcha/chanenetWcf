@@ -1,6 +1,7 @@
 ﻿using chananet.DataContract;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace chananet.DataAccess
         {
             try
             {
-                SqlConnection sqlConnection = new SqlConnection("workstation id=xxxx;packet size=4096;user id=xxx;pwd=xxxx;data source=DBMSSql.mssql.somee.com;persist security info=False;initial catalog=DBMSSql");
+                SqlConnection sqlConnection = new SqlConnection("workstation id=xxxx;packet size=4096;user id=xxxx;pwd=xxxx;data source=DBMSSql.mssql.somee.com;persist security info=False;initial catalog=DBMSSql");
                 return sqlConnection;
             }
             catch (Exception ex)
@@ -56,25 +57,38 @@ namespace chananet.DataAccess
             try
             {
                 LineUsers = new List<LineUser>();
-                SqlConnection sqlConnection = new SqlConnection();
+                string cmdText = "select id,LineProgram_id,AccessToken,Username,null as Password from chananet.lineUser ";
+
                 SqlConnection connection = this.connetion();
                 connection.Open();
-                string cmdText = "select id,LineProgram_id,AccessToken,Username,null as Password from chananet.lineUser ";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = connection;
+                cmd.CommandText = cmdText;
+                cmd.CommandType = CommandType.Text;
+
                 if (Username != null && Password != null)
-                    cmdText = cmdText + "Where  Username='" + Username + "' and Password = '" + Password + "'";
-                SqlCommand sqlCommand = new SqlCommand(cmdText, connection);
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                while (sqlDataReader.Read())
+                {
+                    cmdText = cmdText + "Where  Username=@Username and Password = @Password";
+
+                    SqlParameter User = cmd.Parameters.Add("@Username", SqlDbType.NVarChar, 15);
+                    User.Value = Username;
+
+                    SqlParameter Pass = cmd.Parameters.Add("@Password", SqlDbType.NVarChar, 15);
+                    Pass.Value = Password;
+                }
+
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
                     LineUsers.Add(new LineUser()
                     {
-                        id = (int)sqlDataReader.GetValue(0),
-                        LineProgram_id = (int)sqlDataReader.GetValue(1),
-                        AccessToken = sqlDataReader.GetValue(2).ToString(),
-                        Username = sqlDataReader.GetValue(3).ToString(),
-                        Password = sqlDataReader.GetValue(4).ToString()
+                        id = (int)rdr.GetValue(0),
+                        LineProgram_id = (int)rdr.GetValue(1),
+                        AccessToken = rdr.GetValue(2).ToString(),
+                        Username = rdr.GetValue(3).ToString(),
+                        Password = rdr.GetValue(4).ToString()
                     });
-                sqlDataReader.Close();
-                sqlCommand.Dispose();
+                rdr.Close();
+                cmd.Dispose();
                 connection.Close();
             }
             catch (Exception ex)

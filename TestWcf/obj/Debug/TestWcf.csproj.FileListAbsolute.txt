@@ -1,0 +1,5 @@
+F:\Projects\chanenetWcf\chanenetWcf\TestWcf\bin\Debug\TestWcf.exe.config
+F:\Projects\chanenetWcf\chanenetWcf\TestWcf\bin\Debug\TestWcf.exe
+F:\Projects\chanenetWcf\chanenetWcf\TestWcf\bin\Debug\TestWcf.pdb
+F:\Projects\chanenetWcf\chanenetWcf\TestWcf\obj\Debug\TestWcf.exe
+F:\Projects\chanenetWcf\chanenetWcf\TestWcf\obj\Debug\TestWcf.pdb
