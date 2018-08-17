@@ -2,4 +2,3 @@ F:\Projects\chanenetWcf\chanenetWcf\DataContract\bin\Debug\DataContract.dll
 F:\Projects\chanenetWcf\chanenetWcf\DataContract\bin\Debug\DataContract.pdb
 F:\Projects\chanenetWcf\chanenetWcf\DataContract\obj\Debug\DataContract.dll
 F:\Projects\chanenetWcf\chanenetWcf\DataContract\obj\Debug\DataContract.pdb
-F:\Projects\chanenetWcf\chanenetWcf\DataContract\obj\Debug\DataContract.csprojResolveAssemblyReference.cache

@@ -41,6 +41,7 @@ namespace chananet.ServiceContract
             {
                 new ServiceAction().sentNotify(Message);
                 processResoult.Success = true;
+                processResoult.Message = "ส่งข้อความสำเร็จ";
                 return processResoult;
             }
             catch (Exception ex)

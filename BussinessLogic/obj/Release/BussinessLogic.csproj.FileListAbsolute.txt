@@ -1,0 +1,9 @@
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\BussinessLogic.dll
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\BussinessLogic.pdb
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\DataAccess.dll
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\DataContract.dll
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\DataAccess.pdb
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Release\DataContract.pdb
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Release\BussinessLogic.csprojResolveAssemblyReference.cache
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Release\BussinessLogic.dll
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Release\BussinessLogic.pdb

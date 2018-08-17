@@ -1,0 +1,11 @@
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\ServiceContract.dll
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\ServiceContract.pdb
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\BussinessLogic.dll
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\DataContract.dll
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\DataAccess.dll
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\BussinessLogic.pdb
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\DataContract.pdb
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\bin\Release\DataAccess.pdb
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\obj\Release\ServiceContract.csprojResolveAssemblyReference.cache
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\obj\Release\ServiceContract.dll
+F:\Projects\chanenetWcf\chanenetWcf\ServiceContract\obj\Release\ServiceContract.pdb

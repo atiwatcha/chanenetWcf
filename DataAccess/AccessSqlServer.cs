@@ -55,6 +55,7 @@ namespace chananet.DataAccess
             }
             catch (Exception ex)
             {
+                throw ex;
             }
         }
 
@@ -101,6 +102,7 @@ namespace chananet.DataAccess
             }
             catch (Exception ex)
             {
+                throw ex;
             }
         }
 
@@ -120,6 +122,7 @@ namespace chananet.DataAccess
             }
             catch (SqlException ex)
             {
+                throw ex;
             }
         }
     }

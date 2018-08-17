@@ -12,7 +12,7 @@ namespace TestWcf
         static void Main(string[] args)
         {
             ServiceInterfaceClient client = new ServiceInterfaceClient();
-            ProcessResoult pr = client.sentNotify("ทดสอบนะ");
+            ProcessResoult pr = client.sentNotify("ทดสอบนะ123456");
             if(pr.Success){
 
             }

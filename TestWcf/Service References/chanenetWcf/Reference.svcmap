@@ -21,11 +21,11 @@
     <MetadataSource Address="http://localhost:1507/chanenetWcf.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="chanenetWcf.xsd" MetadataType="Schema" ID="be9f58a9-8ee7-48db-b6e5-fffc454f2d9f" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd0" />
-    <MetadataFile FileName="chanenetWcf.disco" MetadataType="Disco" ID="ddbe99de-a0f3-4756-a9dc-8701beadfee0" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?disco" />
-    <MetadataFile FileName="chanenetWcf1.xsd" MetadataType="Schema" ID="d944b83c-8b3a-4080-84b8-f5bacc5d2d11" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceInterface.wsdl" MetadataType="Wsdl" ID="a591da9b-a82a-4af1-9bbb-03e5d65b5efd" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?wsdl" />
-    <MetadataFile FileName="chanenetWcf2.xsd" MetadataType="Schema" ID="3889b2ee-c809-4abd-bdd3-0e31b9b6e9e1" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd2" />
+    <MetadataFile FileName="chanenetWcf.xsd" MetadataType="Schema" ID="de5c22f6-ad49-4a7f-a495-ff18da78d6b9" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd0" />
+    <MetadataFile FileName="chanenetWcf.disco" MetadataType="Disco" ID="8086da59-0e17-4b5e-bfd7-87ad87b95526" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?disco" />
+    <MetadataFile FileName="chanenetWcf1.xsd" MetadataType="Schema" ID="1a9bd5bc-e52d-423d-b24a-1f9e83026e79" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceInterface.wsdl" MetadataType="Wsdl" ID="616fc87c-09e0-4fe7-828a-2e43d7a4d0ad" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?wsdl" />
+    <MetadataFile FileName="chanenetWcf2.xsd" MetadataType="Schema" ID="c352a131-29c3-4057-8e26-b0541efa7ed4" SourceId="1" SourceUrl="http://localhost:1507/chanenetWcf.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
