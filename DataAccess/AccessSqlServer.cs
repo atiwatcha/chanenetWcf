@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace chananet.DataAccess
 {
@@ -15,13 +16,19 @@ namespace chananet.DataAccess
         {
             try
             {
-                SqlConnection sqlConnection = new SqlConnection("workstation id=xxxx;packet size=4096;user id=xxxx;pwd=xxxx;data source=DBMSSql.mssql.somee.com;persist security info=False;initial catalog=DBMSSql");
+                string con = getNewConnection();
+                SqlConnection sqlConnection = new SqlConnection(con);
                 return sqlConnection;
             }
             catch (Exception ex)
             {
                 return (SqlConnection)null;
             }
+        }
+
+        private string getNewConnection()
+        {
+            return ConfigurationManager.ConnectionStrings["DBMSSql"].ConnectionString;
         }
 
         public void getlineProgram(out LineProgram p, int? id)

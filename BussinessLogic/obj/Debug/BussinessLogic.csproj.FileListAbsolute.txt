@@ -1,9 +1,9 @@
+F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Debug\BussinessLogic.csprojResolveAssemblyReference.cache
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\BussinessLogic.dll
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\BussinessLogic.pdb
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\DataAccess.dll
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\DataContract.dll
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\DataAccess.pdb
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\bin\Debug\DataContract.pdb
-F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Debug\BussinessLogic.csprojResolveAssemblyReference.cache
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Debug\BussinessLogic.dll
 F:\Projects\chanenetWcf\chanenetWcf\BussinessLogic\obj\Debug\BussinessLogic.pdb
